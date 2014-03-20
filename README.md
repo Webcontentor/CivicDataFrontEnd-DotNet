@@ -54,7 +54,7 @@ CkanFrontEnd-DotNet
 * Hidden tags settings
 	
 	
-![Web.config](https://github.com/Accela-Inc/CkanFrontEnd-DotNet/blob/master/Screenshots/Configs/ThemeSettings.png?raw=true 'Web.config')
+![Web.config](https://github.com/Accela-Inc/CkanFrontEnd-DotNet/blob/master/Screenshots/Configs/HiddenTagsConfig.png?raw=true 'Web.config')
 
   Hidden tags which your don not want to show on the front end.
 
