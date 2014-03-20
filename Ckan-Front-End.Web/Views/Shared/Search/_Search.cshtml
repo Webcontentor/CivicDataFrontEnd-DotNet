@@ -1,0 +1,87 @@
+﻿@using Ckan_Front_End.Api.Model
+@using Ckan_Front_End.Web.Models
+@using Ckan_Front_End.Web.Models.Helpers
+@model PackageSearchResultsModel
+
+@{
+    string query = String.Empty;
+    if (Model != null) {
+        query = Model.SearchParameters.Query;
+    }
+}
+
+@using (Html.BeginForm("Index", "Search",
+    null,
+    FormMethod.Get, 
+    new Dictionary<string, object> { { "class", "search-form" } } ))
+{ 
+<p><span class="header-package-count">A total of <span style="color: #ff5324">@Html.Action("PackageCount", "Widget")</span> registered datasets are available.</span></p>
+    
+<div class="search">
+        <input name="q" type="text" tabindex="1" class="search-input" value="@query" />
+        <input type="submit" class="search-submit" value="" />
+
+
+@if (Model != null && Model.DisplayMode != ResultsDisplayMode.List)
+{
+    @Html.Hidden("mode", @Model.DisplayMode.ToString().ToLower());
+}
+
+@if (!String.IsNullOrEmpty(query))
+{
+    @Html.ActionLink("Clear", "Index", "Search");
+}
+</div>
+}
+
+<script language="javascript">
+    
+    var $input = $('.search-input');
+
+    $input.watermark('Search...');
+
+    $input.focus(function() {
+        $(this).select();
+    });
+
+    @if (SettingsHelper.GetSuggestionsEnabled()) 
+    {
+        <text>
+        var suggestUrl = '@Url.Action("Index", "Suggestion", new { prefix = "_" })'.slice(0, -1);
+        var delay = @SettingsHelper.GetSuggestionsDelay();
+        $input.autocomplete({
+            
+            source: function (request, response) {
+                $.getJSON(suggestUrl + request.term, null, function (json) {
+                    response(json);
+                });
+            },
+            select: function (event, ui) {
+                if (ui.item) {
+                    $input.val(ui.item.value);
+                }
+                $('.search-form').submit();
+            },
+            delay: delay
+        });
+        </text>
+    }
+    
+</script>
+
+@if (SettingsHelper.GetGoogleAnalyticsEnabled()) 
+{
+<script language="javascript">
+    $('.search-submit').click(function () {
+        var value = $('.search-input').val();
+
+        // Track the search event in analytics
+        _gaq.push([
+            '_trackEvent',
+            'Search',
+            'Query',
+            value]);
+
+    });
+</script>
+}

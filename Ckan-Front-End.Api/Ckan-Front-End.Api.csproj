@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B1EA053-5BD9-44E2-AF1A-7C6D20D29AEC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ckan_Front_End.Api</RootNamespace>
+    <AssemblyName>Ckan-Front-End.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkdownSharp">
+      <HintPath>..\References\MarkdownSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\References\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheSettings.cs" />
+    <Compile Include="CkanClient.cs" />
+    <Compile Include="DataStructures\Trie.cs" />
+    <Compile Include="Exceptions\CkanException.cs" />
+    <Compile Include="Exceptions\CkanRequestException.cs" />
+    <Compile Include="Exceptions\CkanTimeoutException.cs" />
+    <Compile Include="Helper\CachedRequestResponse.cs" />
+    <Compile Include="Helper\CacheEntry.cs" />
+    <Compile Include="Helper\CacheEntrySummary.cs" />
+    <Compile Include="Helper\DateHelper.cs" />
+    <Compile Include="Helper\StringHelper.cs" />
+    <Compile Include="Helper\SuggestionHelper.cs" />
+    <Compile Include="Helper\TagHelper.cs" />
+    <Compile Include="Model\ActionResponse.cs" />
+    <Compile Include="Model\ActionResponseRelated.cs" />
+    <Compile Include="Model\Group.cs" />
+    <Compile Include="Model\License.cs" />
+    <Compile Include="Model\Package.cs" />
+    <Compile Include="Model\PackageSearchParameters.cs" />
+    <Compile Include="Model\PackageSearchResponse.cs" />
+    <Compile Include="Model\Rating.cs" />
+    <Compile Include="Model\Related.cs" />
+    <Compile Include="Model\Resource.cs" />
+    <Compile Include="Model\ResourceSearchParameters.cs" />
+    <Compile Include="Model\ResourceSearchResponse.cs" />
+    <Compile Include="Model\Revision.cs" />
+    <Compile Include="Model\RevisionSearchParameters.cs" />
+    <Compile Include="Model\Tag.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt" />
+    <Content Include="NOTICE.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

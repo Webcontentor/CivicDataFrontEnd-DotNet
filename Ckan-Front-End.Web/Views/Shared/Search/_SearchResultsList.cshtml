@@ -1,0 +1,90 @@
+﻿@using Ckan_Front_End.Api.Model
+@using Ckan_Front_End.Web.Models
+@using Ckan_Front_End.Web.Models.Helpers
+@model PackageSearchResultsModel
+           
+@{
+    var formatTypes = Ckan_Front_End.Web.Models.Helpers.SettingsHelper.GetResourceSettings().Types;
+}
+
+<div class="results">
+    @{ var odd = true; int count = 1;}
+    @foreach (var result in Model.SearchResults.Results)
+    {
+        <div class="result @(odd ? "odd" : "even")">
+            
+            @if (result.Resources.Count > 0)
+            {
+                var flag = true;
+                <div class="formats">
+                    <span class="formats-label"></span>
+                    @foreach (var format in result.Resources.Select(r => r.Format).Distinct())
+                    {
+                        var title = format;
+                        if (formatTypes.ContainsKey(format))
+                        {
+                            title = formatTypes[format].Title;
+                        }
+                        <span class="format @(flag ? "format-odd" : "format-event") tooltip" title="@title">
+                            @if (!String.IsNullOrEmpty(format))
+                            {
+                                
+                                @format
+                            }
+                            else
+                            {
+                                @("unspecified")
+                            }
+                        </span>
+                        flag = !flag;
+                    }
+                </div>
+            }
+            
+            <div class="result-title">@Html.ActionLink(@result.GetAbbreviatedTitle(SettingsHelper.GetDatasetTitleLength()), "Index", "Package", new { package = @result.Name }, new { @class = "package-link tooltip", title = @result.Title })</div>
+            
+            @* Removed, no longer supported by CKAN
+            @if (SettingsHelper.GetSearchResultsShowRating())
+            {
+            <div class="result-rating">
+                @Html.Partial("~/Views/Shared/_Rating.cshtml", result)
+            </div>
+            }
+            *@
+
+            <div class="result-date">Last updated @result.MetadataModifiedAsDate.ToShortDateString()</div>
+
+            <div class="notes">@Html.Raw(result.GetAbbreviatedNotes(300))</div>
+
+            @if (SettingsHelper.GetSearchResultsShowTags())
+            {
+                <div class="result-tags">Tags:
+                @foreach (var tag in TagHelper.FilterTags(result.Tags))
+                {
+                    <span class="result-tag">@Html.ActionLink(tag, "Index", "Search", new { tag = @tag }, null)</span>
+                }
+                </div>
+            }
+            
+        </div>
+        if(count != Model.SearchResults.Results.Count() )
+        {
+            <div id="line"></div>
+        }
+        odd = !odd;
+        count++;
+    }
+</div>
+
+<script language="javascript">
+    $(function () {
+
+        var route = '';
+
+        // Register the click event on the result
+        $(".result").click(function (item) {
+            window.location = $(this).find(".package-link").attr('href');
+        });
+
+    });
+</script>

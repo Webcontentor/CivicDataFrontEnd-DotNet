@@ -1,0 +1,41 @@
+﻿@using Ckan_Front_End.Api.Model
+@using Ckan_Front_End.Web.Models
+@using Ckan_Front_End.Web.Models.Helpers
+@model PackageSearchResultsModel
+
+@{
+
+    // Start with the current route values
+    var routeValues = RouteHelper.RouteFromParameters(Html.ViewContext);
+
+    // Remove the page number since we want to start from the beginning if we filter
+    RouteHelper.UpdateRoute(routeValues, "page", null);
+
+    List<Tag> tags = TagHelper.ComputeTagScale(Model.SearchResults.Tags);   
+}
+
+@if (Model.SearchResults.Count > 0)
+{
+<div class="container">
+    <h2 class="sidebar-title">
+        <img class="img" src="../../Content/Theme/BridgeView/images/tag.png" />Filter By Tag</h2>
+    <div class="container-content">
+        @foreach (var tag in tags)
+        {
+            string scale = tag.Scale + "%";
+            <div class="tag">
+            
+        
+            <a href="@Url.Action("Index", "Search", RouteHelper.UpdateRoute(routeValues, "tag", tag.Label))" 
+               data-tag="@tag.Label" 
+               style="font-size: @scale;">@tag.Label 
+             @if (SettingsHelper.GetTagCloudShowCount()) {
+                <text>(@tag.Count)</text>
+            }</a>
+            </div>
+
+        }
+    </div>
+</div>
+}
+

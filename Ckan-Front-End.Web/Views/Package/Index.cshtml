@@ -1,0 +1,76 @@
+﻿@using Ckan_Front_End.Api.Model
+@using Ckan_Front_End.Web.Models.Helpers
+@using System.Text
+@model Package
+
+@{
+    string title = SettingsHelper.GetPackagePageTitle();
+    ViewBag.Title = title.Replace("{Package.Title}", @Model.Title);
+}
+<div id="body">
+
+    @Html.Partial("~/Views/Shared/Search/_Search.cshtml", null, new ViewDataDictionary())
+
+    <div class="package">
+        <h2 class="package-title">@Model.Title</h2>
+        <div class="package-subtitle">
+            <div class="tagline">
+                @{
+                    StringBuilder sb = new StringBuilder();
+
+                    if (Model.MetadataModifiedAsDate > DateTime.MinValue)
+                    {
+                        sb.AppendFormat("Last updated {0}", Model.MetadataModifiedAsDate.ToShortDateString());
+                    }
+                }
+                @sb.ToString()
+
+            </div>
+            @if (SettingsHelper.GetPackageRssFeedEnabled())
+            {
+                string entityType = "dataset";
+                if (Model.IsOpen == null)
+                {
+                    entityType = "package";
+                }
+                <a class="package-subscribe tooltip" title="Subscribe" href="http://@SettingsHelper.GetRepositoryHost()/@entityType/history/@Model.Name?days=@SettingsHelper.GetPackageRssFeedDays()&format=atom" target="_top"> </a>
+            }
+
+        </div>
+        @if (!String.IsNullOrEmpty(Model.NotesRendered) && !String.IsNullOrEmpty(Model.Notes))
+        {
+            <div class="notes">
+                @if (!String.IsNullOrEmpty(Model.NotesRendered))
+                {
+                    <p>@Html.Raw(Model.NotesRendered)</p>
+                }
+                else if (!String.IsNullOrEmpty(Model.Notes))
+                {
+                    <p>@Html.Raw(Model.Notes)</p>
+                }
+            </div>
+        }
+    </div>
+
+    @Html.Partial("~/Views/Shared/Package/_Package.cshtml")
+</div>
+@section SideBar {
+    <div id="sidebar">
+        @if (SettingsHelper.GetPackageRelatedItemsEnabled())
+        {
+            @Html.Partial("~/Views/Shared/Package/_Related.cshtml")
+        }
+        @Html.Partial("~/Views/Shared/Package/_Tags.cshtml")
+        <div id="line"></div>
+        @if (SettingsHelper.GetPackageUseThemeLicenseTemplate())
+        {
+            @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_License.cshtml")
+        }
+        else
+        {
+            @Html.Partial("~/Views/Shared/Package/_License.cshtml")
+        }
+        <div id="line"></div>
+        @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_About.cshtml")
+    </div>
+}

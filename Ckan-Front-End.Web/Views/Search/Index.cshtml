@@ -1,0 +1,21 @@
+﻿@using Ckan_Front_End.Web.Models.Helpers
+@{
+    ViewBag.Title = SettingsHelper.GetSearchPageTitle();
+}
+
+@Html.Partial("~/Views/Shared/Search/_Search.cshtml")
+
+<div id="body">
+    @Html.Partial("~/Views/Shared/Search/_SearchResults.cshtml")
+</div>
+
+@section SideBar {
+<div id="sidebar">
+    @* @Html.Partial("~/Views/Shared/Search/_SearchResultsSortBy.cshtml") *@
+
+    @Html.Partial("~/Views/Shared/Search/_SearchResultsFilterByTag.cshtml")
+    <div id="line"></div>
+
+    @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_About.cshtml")
+</div>
+}

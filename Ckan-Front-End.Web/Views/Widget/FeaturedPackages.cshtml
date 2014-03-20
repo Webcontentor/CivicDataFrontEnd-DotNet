@@ -1,0 +1,59 @@
+﻿@using Ckan_Front_End.Api.Model
+@using Ckan_Front_End.Web.Models.Helpers
+@model PackageSearchResponse<Package>
+ 
+@*@{
+    var formatTypes = Ckan_Front_End.Web.Models.Helpers.SettingsHelper.GetResourceSettings().Types;
+}*@
+
+
+@if (Model.Results.Count >= 3)
+{  
+<div class="container">
+<h2 class="container-title"><img class="img" src="../../Content/Theme/BridgeView/images/title-img.png" />Featured Datasets @*| @Html.ActionLink("View All Datasets", "Index", "Search", null, new { @class = "container-title-link" })*@</h2>
+<div class="featured-container">
+    @foreach (var result in Model.Results)
+    {
+        <div class="featured-package">
+            @Html.ActionLink(@result.GetAbbreviatedTitle(SettingsHelper.GetDatasetTitleLength()), "Index", "Package", new { package = @result.Name }, new { @class = "package-link tooltip", title = @result.Title })
+            
+            @* Removed, no longer supported by CKAN
+            <div class="resultRating">
+            @Html.Partial("~/Views/Shared/_Rating.cshtml", result)
+            </div>
+            *@
+
+            <p class="featured-package-notes">
+            @result.GetAbbreviatedNotes(75)
+            </p>
+
+            @*<div class="formats">
+            @foreach (var resource in result.Resources)
+            {
+                <span class="format tooltip" title="@resource.Description">@resource.Format</span>
+            }
+            </div>*@
+            <div class="formats">
+                @*<span class="formats-label"></span>*@
+                @foreach (var resource in result.Resources)
+                {
+                    var title = resource.Description;
+                    if (string.IsNullOrEmpty(title))
+                    {
+                        title = resource.Format;
+                    }
+                    <span class="format tooltip" title="@title">
+                        @resource.Format
+                    </span>
+                }
+            </div>
+
+        </div>
+    }
+
+</div>
+</div>
+
+<div id="line"></div>
+}
+

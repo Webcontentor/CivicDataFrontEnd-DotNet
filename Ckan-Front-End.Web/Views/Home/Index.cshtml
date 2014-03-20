@@ -1,0 +1,39 @@
+﻿@using Ckan_Front_End.Web.Models.Helpers
+@using Ckan_Front_End.Web.Models
+@{
+    ViewBag.Title = SettingsHelper.GetHomePageTitle();
+}
+
+<div id="header">@RenderPage("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_HomeHeader.cshtml")
+</div>
+
+<div id="body">
+        @Html.Partial("~/Views/Shared/Search/_Search.cshtml")
+
+        @if (SettingsHelper.GetHomeFeaturedPackagesEnabled())
+        {
+            @Html.Action("FeaturedPackages", "Widget")
+        }
+                
+        @if (SettingsHelper.GetHomeRecentlyUpdatedPackagesEnabled())
+        {
+            @Html.Action("RecentlyUpdated", "Widget")
+        }
+</div>
+
+@section SideBar {
+<div id="sidebar">
+    @if (SettingsHelper.GetHomePopularTagsEnabled())
+    {
+        @Html.Action("PopularTags", "Widget")
+        <div id="line"></div>
+    }
+    @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_License.cshtml")
+    <div id="line"></div>
+
+    @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_About.cshtml")
+</div>
+}
+
+
+

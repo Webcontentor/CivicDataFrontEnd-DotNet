@@ -1,0 +1,10 @@
+﻿@using Ckan_Front_End.Web.Models
+@model PackageSearchResultsModel
+       
+<div class="container">
+<h2 class="container-title">
+    <img class="img" src="../../Content/Theme/BridgeView/images/title-img.png" />Recently Updated 
+    @*| @Html.ActionLink("View All Datasets", "Index", "Search", null, new { @class = "container-title-link" } )*@</h2>
+    @Html.Partial("~/Views/Shared/Search/_SearchResultsList.cshtml",Model)
+    @Html.ActionLink("View All Datasets", "Index", "Search", null, new { @class = "container-title-link" })
+</div>

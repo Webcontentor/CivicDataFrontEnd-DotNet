@@ -1,0 +1,52 @@
+﻿@using Ckan_Front_End.Api.Model
+@using Ckan_Front_End.Web.Models
+@using Ckan_Front_End.Web.Models.Helpers
+
+@model PackageSearchResultsModel
+
+<div class="container">
+    <h2 class="container-title">
+    Results
+
+    @if (Model.SearchResults.Count > 0)
+    {
+        @Html.Partial("_ResultsMode")  
+    }
+
+    </h2>
+
+    @if (Model.SearchResults.Count > 0)
+    {         
+        if (Model.Pager != null)
+        {
+            <div class="results-header">
+            @Model.Pager.ToString()
+            </div> 
+        }
+    }
+   
+    @if (Model.SearchResults.Count > 0)
+    {
+        if (Model.DisplayMode == ResultsDisplayMode.Table) {
+            @Html.Partial("~/Views/Shared/Search/_SearchResultsTable.cshtml")
+        } 
+        else
+        {
+            @Html.Partial("~/Views/Shared/Search/_SearchResultsList.cshtml")            
+        }
+    }
+    else
+    {
+        @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_NoSearchResultsFound.cshtml")
+    }
+
+    @if (Model.Pager != null)
+    {
+        <div class="pager-container">
+        @Html.Partial("_Pager")
+        </div>
+    }
+
+</div>
+
+

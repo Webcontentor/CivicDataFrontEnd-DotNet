@@ -1,0 +1,59 @@
+﻿@using Ckan_Front_End.Web.Models.Helpers
+<!-- Google Analytics Tracking Code -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '@SettingsHelper.GetGoogleAnalyticsProfile()']);
+
+    @if(!String.IsNullOrEmpty(SettingsHelper.GetGoogleAnalyticsDomainName())) {
+        @:_gaq.push(['_setDomainName', '@SettingsHelper.GetGoogleAnalyticsDomainName()']);
+    }
+
+    @if(SettingsHelper.GetGoogleAnalyticsLinkerAllowed()) {
+        @:_gaq.push(['_setAllowLinker', true]);
+    }
+
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+<!-- Enable common analytics -->
+<script language="javascript">
+
+    $(function () {
+        
+         <!-- Tag clicks -->
+         $(".tag > a").click(function () {
+            var tag = $(this).attr('data-tag');
+            var href = $(this).attr('href');
+
+            // Track the search event in analytics
+            _gaq.push([
+                '_trackEvent',
+                'Search',
+                'Tag:' + tag,
+                href]);
+        });
+
+        <!-- External links -->
+        $("a.external").click(function() {
+            var link = $(this).text();
+            var href = $(this).attr('href');
+
+            // Track the click event in analytics
+            _gaq.push([
+                '_trackEvent',
+                'Link:External',
+                link,
+                href]);
+        });
+
+    });
+    
+</script>

@@ -1,0 +1,105 @@
+@using Ckan_Front_End.Web.Models.Helpers
+@using Ckan_Front_End.Web.Models
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewBag.Title</title>
+
+    @Html.Partial("~/Views/Shared/_MetaTags.cshtml")
+
+    <!-- JavaScript dependencies -->
+    <script src="@SettingsHelper.GetJQuerySource()"></script>
+    <script src="@Url.Content("~/Scripts/jquery.watermark.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.8.16.custom.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/stars/jquery.ui.stars.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/tiptip/jquery.tipTip.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/datatables/jquery.dataTables.min.js")"></script>
+
+    <!-- CSS dependencies -->
+    <link href="@Url.Content("~/Content/smoothness/jquery-ui-1.8.16.custom.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Content/Styles.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Scripts/stars/jquery.ui.stars.min.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Scripts/tiptip/tipTip.css")" rel="stylesheet" type="text/css"/>
+    <link href="@Url.Content("~/Scripts/datatables/css/jquery.dataTables.css")" rel="stylesheet" type="text/css"/>
+
+    <!-- Theme resources -->
+    @RenderPage("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_Head.cshtml")
+
+    <!-- Enable tipTip tooltips -->
+    <script language="javascript">
+        $(function () {
+            $(".tooltip").tipTip({
+                defaultPosition: "top",
+                delay: 200
+            });
+        });
+    </script>
+
+
+    @if (SettingsHelper.GetUserVoiceEnabled())
+    {
+        @RenderPage("~/Views/Shared/_UserVoice.cshtml")
+    }
+    
+    @if (SettingsHelper.GetGoogleAnalyticsEnabled() && ViewData["DisableAnalytics"] == null)
+    {
+        @RenderPage("~/Views/Shared/_Analytics.cshtml")
+    }
+</head>
+
+@RenderBody()
+
+@if (SettingsHelper.GetIframeEnabled())
+{
+    var id = SettingsHelper.GetIframeId();
+    var src = SettingsHelper.GetIframeSrc();
+    
+    <!-- Handle iframe resize after page load -->
+    <script language="javascript">
+
+        var iframeId = '@id';
+        var iframeSrc = '@src';
+
+        function resizeFrame() {
+            var isInIFrame = (window.location != window.parent.location) ? true : false;
+
+                if (isInIFrame) {
+
+                    var iframe = null;
+                    if (iframeId !== '') {
+                        iframe = $('iframe#' + iframeId, parent.document).get(0);
+                    } else if (iframeSrc !== '') {
+                        iframe = $('iframe[src="' + iframeSrc + '"]', parent.document).get(0);
+                    }
+                    
+                    if (iframe) {
+                        // Reset the iframe height (so we can shrink the iframe if needed)
+                        $(iframe).height(0);
+
+                        // Set the new size (plus a bit extra for IE quirks)
+                        $(iframe).height($(document).height() + 10);
+                    }
+                }
+        }
+        
+        $(function () {
+            try {
+                
+                @if (!String.IsNullOrEmpty(SettingsHelper.GetIframeDocumentDomain()))
+                {
+                <text>document.domain = "@SettingsHelper.GetIframeDocumentDomain()";</text>
+                }
+
+                resizeFrame();
+
+            } catch (ex) {
+                // Intentionally catch this so we don't get same origin errors in we aren't in an iframe
+            }
+        });
+    </script>
+}
+
+</html>
+
+
+

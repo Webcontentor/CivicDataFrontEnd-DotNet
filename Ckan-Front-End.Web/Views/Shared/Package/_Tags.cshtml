@@ -1,0 +1,19 @@
+﻿@using Ckan_Front_End.Api.Model
+@model Package
+
+<div class="container">
+    <h2 class="sidebar-title">
+        <img class="img" src="../../Content/Theme/BridgeView/images/tag.png" />Tags
+    </h2>
+    <div class="container-content">
+        @foreach (var tag in Model.Tags)
+        {
+            <div class="tag">
+                <a href="@Url.Action("Index", "Search", new { tag = tag })" data-tag="@tag">@tag</a>
+            </div>
+        }
+    </div>
+</div>
+
+
+

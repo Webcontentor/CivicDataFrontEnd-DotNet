@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>http://192.168.0.219/</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Ckan_Front_End.Api.dll">
+      <publishTime>03/08/2014 17:21:48</publishTime>
+    </File>
+    <File Include="bin/Ckan_Front_End.Api.pdb">
+      <publishTime>03/08/2014 17:21:48</publishTime>
+    </File>
+    <File Include="bin/Ckan_Front_End.Api.xml">
+      <publishTime>01/13/2014 09:13:37</publishTime>
+    </File>
+    <File Include="bin/Ckan_Front_End.Web.dll">
+      <publishTime>03/08/2014 17:21:49</publishTime>
+    </File>
+    <File Include="bin/Ckan_Front_End.Web.pdb">
+      <publishTime>03/08/2014 17:21:49</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/GaDotNet.Common.dll">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="bin/MarkdownSharp.dll">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/08/2013 15:15:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Configuration.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Diagnostics.dll">
+      <publishTime>09/26/2013 11:00:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll">
+      <publishTime>09/26/2013 11:00:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Storage.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/09/2013 11:05:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/06/2011 08:42:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/06/2011 06:45:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/06/2011 06:45:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/09/2013 11:05:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/06/2011 06:45:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>01/13/2011 09:24:24</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>01/11/2011 02:11:10</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>01/11/2011 02:11:20</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>01/11/2011 02:11:26</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>01/15/2014 08:57:44</publishTime>
+    </File>
+    <File Include="Content/Images/remove_small.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Images/remove_small_hover.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Images/rss.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-icons_222222_256x240.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-icons_454545_256x240.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-icons_888888_256x240.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/smoothness/jquery-ui-1.8.16.custom.css">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Styles.css">
+      <publishTime>03/10/2014 10:30:45</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/font.css">
+      <publishTime>05/19/2013 18:33:54</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/about.png">
+      <publishTime>02/28/2014 18:56:22</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/body-bg.jpg">
+      <publishTime>02/28/2014 18:47:26</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/bridgeheader-bg.png">
+      <publishTime>02/28/2014 18:52:50</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/button_search-over.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/button_search.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/header_bottom_left.jpg">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/header_logo.jpg">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/header_title_bridgeview.jpg">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/header_title_city_of.jpg">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/line.png">
+      <publishTime>03/01/2014 09:47:06</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/logo.png">
+      <publishTime>02/28/2014 18:49:14</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_bar_bg.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_business-over.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_business.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_government-over.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_government.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_home-over.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_home.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_residents-over.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_residents.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_visitors-over.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/nav_visitors.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/page_pinstripe_bg.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/search.png">
+      <publishTime>02/28/2014 18:50:16</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/sidenav_primary.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/spacer.gif">
+      <publishTime>05/19/2013 18:33:46</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/tag.png">
+      <publishTime>02/28/2014 18:57:16</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/title-img.png">
+      <publishTime>03/07/2014 18:52:23</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/top-search.png">
+      <publishTime>02/28/2014 18:51:50</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/images/usage.png">
+      <publishTime>02/28/2014 19:08:25</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/Styles.css">
+      <publishTime>03/10/2014 10:49:17</publishTime>
+    </File>
+    <File Include="Content/Theme/BridgeView/stylesheet.css">
+      <publishTime>05/19/2013 18:33:54</publishTime>
+    </File>
+    <File Include="Content/Theme/CastleRock/Styles.css">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Theme/Default/Styles.css">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Theme/Demo/Styles.css">
+      <publishTime>12/26/2013 18:04:14</publishTime>
+    </File>
+    <File Include="Content/Theme/Denver/favicon.ico">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Theme/Denver/img/banner.jpg">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Theme/Denver/img/box_top.jpg">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Theme/Denver/img/data.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Theme/Denver/img/rss.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Theme/Denver/img/table.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Content/Theme/Denver/Styles.css">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="iframetest.html">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="LICENSE.txt">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="NOTICE.txt">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/05/2014 16:41:18</publishTime>
+    </File>
+    <File Include="README.markdown">
+      <publishTime>02/24/2014 15:55:56</publishTime>
+    </File>
+    <File Include="ReleaseNotes.markdown">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/css/jquery.dataTables.css">
+      <publishTime>03/10/2014 10:35:33</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/back_disabled.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/back_enabled.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/back_enabled_hover.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/forward_disabled.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/forward_enabled.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/forward_enabled_hover.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/sort_asc.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/sort_asc_disabled.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/sort_both.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/sort_desc.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/images/sort_desc_disabled.png">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/datatables/jquery.dataTables.min.js">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.14.custom.min.js">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.16.custom.min.js">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery.watermark.min.js">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/stars/jquery.ui.stars.css">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/stars/jquery.ui.stars.gif">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/stars/jquery.ui.stars.js">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/stars/jquery.ui.stars.min.css">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/stars/jquery.ui.stars.min.js">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/tiptip/jquery.tipTip.min.js">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Scripts/tiptip/tipTip.css">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Cache/Index.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>03/08/2014 15:34:01</publishTime>
+    </File>
+    <File Include="Views/Offline/Index.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Package/Index.cshtml">
+      <publishTime>03/08/2014 17:24:02</publishTime>
+    </File>
+    <File Include="Views/Search/Index.cshtml">
+      <publishTime>03/08/2014 14:41:20</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>03/08/2014 16:22:43</publishTime>
+    </File>
+    <File Include="Views/Shared/Layout/_Content.cshtml">
+      <publishTime>03/05/2014 16:42:43</publishTime>
+    </File>
+    <File Include="Views/Shared/Layout/_Page.cshtml">
+      <publishTime>02/26/2014 09:57:04</publishTime>
+    </File>
+    <File Include="Views/Shared/Package/_Disqus.cshtml">
+      <publishTime>03/08/2014 18:46:52</publishTime>
+    </File>
+    <File Include="Views/Shared/Package/_License.cshtml">
+      <publishTime>03/10/2014 11:42:42</publishTime>
+    </File>
+    <File Include="Views/Shared/Package/_Package.cshtml">
+      <publishTime>03/10/2014 10:29:27</publishTime>
+    </File>
+    <File Include="Views/Shared/Package/_Rate.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Shared/Package/_Related.cshtml">
+      <publishTime>03/08/2014 14:28:05</publishTime>
+    </File>
+    <File Include="Views/Shared/Package/_Tags.cshtml">
+      <publishTime>03/08/2014 15:00:20</publishTime>
+    </File>
+    <File Include="Views/Shared/Search/_Search.cshtml">
+      <publishTime>03/08/2014 15:34:17</publishTime>
+    </File>
+    <File Include="Views/Shared/Search/_SearchResults.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Shared/Search/_SearchResultsFilterByTag.cshtml">
+      <publishTime>03/10/2014 09:43:05</publishTime>
+    </File>
+    <File Include="Views/Shared/Search/_SearchResultsList.cshtml">
+      <publishTime>03/08/2014 14:00:34</publishTime>
+    </File>
+    <File Include="Views/Shared/Search/_SearchResultsSortBy.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Shared/Search/_SearchResultsTable.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_AddThis.cshtml">
+      <publishTime>02/25/2014 15:18:45</publishTime>
+    </File>
+    <File Include="Views/Shared/_Analytics.cshtml">
+      <publishTime>02/26/2014 09:58:06</publishTime>
+    </File>
+    <File Include="Views/Shared/_BreadCrumbs.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_MetaTags.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_Pager.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_Rating.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_ResultsMode.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_UserVoice.cshtml">
+      <publishTime>02/25/2014 10:59:53</publishTime>
+    </File>
+    <File Include="Views/SiteMap/Index.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/BridgeView/_About.cshtml">
+      <publishTime>03/10/2014 10:06:44</publishTime>
+    </File>
+    <File Include="Views/Theme/BridgeView/_Body.cshtml">
+      <publishTime>03/05/2014 16:12:50</publishTime>
+    </File>
+    <File Include="Views/Theme/BridgeView/_Head.cshtml">
+      <publishTime>12/26/2013 13:53:12</publishTime>
+    </File>
+    <File Include="Views/Theme/BridgeView/_HomeHeader.cshtml">
+      <publishTime>03/10/2014 10:05:16</publishTime>
+    </File>
+    <File Include="Views/Theme/BridgeView/_License.cshtml">
+      <publishTime>03/08/2014 15:04:14</publishTime>
+    </File>
+    <File Include="Views/Theme/BridgeView/_NoSearchResultsFound.cshtml">
+      <publishTime>12/25/2013 10:49:21</publishTime>
+    </File>
+    <File Include="Views/Theme/CastleRock/_About.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/CastleRock/_BodyWithSections.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/CastleRock/_Head.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/CastleRock/_HomeHeader.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/CastleRock/_License.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/CastleRock/_NoSearchResultsFound.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Default/_About.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Default/_Body.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Default/_Head.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Default/_HomeHeader.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Default/_License.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Default/_NoSearchResultsFound.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Demo/_About.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Demo/_Body.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Demo/_Error.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Demo/_Head.cshtml">
+      <publishTime>12/25/2013 10:12:44</publishTime>
+    </File>
+    <File Include="Views/Theme/Demo/_HomeHeader.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Demo/_License.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Demo/_NoSearchResultsFound.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Denver/TermsOfUse.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Denver/_About.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Denver/_Body.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Denver/_Head.cshtml">
+      <publishTime>12/25/2013 09:58:42</publishTime>
+    </File>
+    <File Include="Views/Theme/Denver/_HomeHeader.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Denver/_License.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/Denver/_NoSearchResultsFound.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/Theme/_ViewStart.cshtml">
+      <publishTime>03/07/2014 17:17:08</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>03/09/2014 16:19:15</publishTime>
+    </File>
+    <File Include="Views/Widget/FeaturedPackages.cshtml">
+      <publishTime>02/25/2014 17:01:05</publishTime>
+    </File>
+    <File Include="Views/Widget/PopularTags.cshtml">
+      <publishTime>03/08/2014 15:00:00</publishTime>
+    </File>
+    <File Include="Views/Widget/RecentlyUpdated.cshtml">
+      <publishTime>03/08/2014 13:09:38</publishTime>
+    </File>
+    <File Include="Views/Widget/_ViewStart.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/24/2013 12:47:48</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/10/2014 14:00:18</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

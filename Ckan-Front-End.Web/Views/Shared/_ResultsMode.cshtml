@@ -1,0 +1,42 @@
+﻿@using Ckan_Front_End.Api.Model
+@using Ckan_Front_End.Web.Models
+@using Ckan_Front_End.Web.Models.Helpers
+@using System.Collections.Specialized
+@model PackageSearchResultsModel
+
+@{
+var routeValues = RouteHelper.RouteFromParameters(Html.ViewContext);
+
+// Remove the page number from the route values since we are doing client-side
+// pagination in the table mode
+RouteHelper.UpdateRoute(routeValues, "page", null);
+}
+
+<div class="results-mode">
+    @if (Model.DisplayMode == ResultsDisplayMode.Table)
+    {
+        
+
+        <a class="mode" href="@Url.Action("Index", "Search", RouteHelper.UpdateRoute(routeValues, "mode", "list"))">List</a><span class="mode active">Table</span>
+
+    }
+    else
+    {
+        <span class="mode active">List</span><a class="mode" href="@Url.Action("Index", "Search", RouteHelper.UpdateRoute(routeValues, "mode", "table"))">Table</a>
+    }
+
+</div>
+ 
+@if (SettingsHelper.GetGoogleAnalyticsEnabled())
+{
+<script language="javascript">
+    $('.mode').click(function () {
+        var mode = $(this).text();
+        _gaq.push([
+            '_trackEvent',
+            'Search',
+            'Mode',
+            mode]);
+    });
+</script>
+}

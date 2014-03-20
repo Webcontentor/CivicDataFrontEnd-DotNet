@@ -1,0 +1,39 @@
+﻿@using Ckan_Front_End.Web.Models
+@using Ckan_Front_End.Web.Models.Helpers
+@{
+    Layout = "~/Views/Shared/Layout/_Page.cshtml";
+} 
+
+<body>
+    <div id="page">
+
+        <!-- OpenColorado branding -->
+        <div id="bridgeview-header">
+            <div id="bridgeview-header-top"></div>
+            <div id="bridgeview-header-menu">
+                <div id="logo">
+                    <img src="../../../Content/Theme/BridgeView/images/logo.png" alt="City of BridgwView" />
+                </div>
+                <div id="menu">
+                    <div class="bridgeview-menu"><a>HOME</a></div>
+                    <div class="bridgeview-menu"><a>EVENTS</a></div>
+                    <div class="bridgeview-menu"><a>MEET THE MAYOR</a> </div>
+                    <div class="bridgeview-menu"><a>DEPARTMEN</a></div>
+                    <div id="search">
+                        <input type="text" class="topsearch" placeholder="Search Other Content" >
+                        <input type="submit" class="topsubmit" value="" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Application Content Here-->
+        @RenderBody()
+        <!--End Application Content Here-->
+    </div>
+    <div id="footer">
+        <div id="line"></div>
+        Copyright © 2014 City of Bridgeview All rights reserved. 
+    </div>
+</body>
