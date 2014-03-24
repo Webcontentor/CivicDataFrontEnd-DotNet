@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Ckan_Front_End.Api.Model;
+using CivicDataFrontEnd.Api.Model;
 
-namespace Ckan_Front_End.Api.Helper
+namespace CivicDataFrontEnd.Api.Helper
 {
     public static class TagHelper
     {

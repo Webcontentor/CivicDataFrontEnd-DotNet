@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ckan_Front_End.Api.Exceptions
+namespace CivicDataFrontEnd.Api.Exceptions
 {
     public class CkanException : Exception
     {

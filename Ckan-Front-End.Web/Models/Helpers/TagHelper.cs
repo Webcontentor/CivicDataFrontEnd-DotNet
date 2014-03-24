@@ -5,10 +5,10 @@ using System.Web;
 using System.Web.Routing;
 using System.Collections.Specialized;
 using System.Web.Mvc;
-using Ckan_Front_End.Api.Model;
-using Ckan_Front_End.Web.Models.Helpers;
+using CivicDataFrontEnd.Api.Model;
+using CivicDataFrontEnd.Web.Models.Helpers;
 
-namespace Ckan_Front_End.Web.Models
+namespace CivicDataFrontEnd.Web.Models
 {
     public static class TagHelper
     {

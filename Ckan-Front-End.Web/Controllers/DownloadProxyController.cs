@@ -8,16 +8,16 @@ using System.IO;
 using GaDotNet.Common;
 using GaDotNet.Common.Data;
 using GaDotNet.Common.Helpers;
-using Ckan_Front_End.Web.Models.Helpers;
+using CivicDataFrontEnd.Web.Models.Helpers;
 using System.Configuration;
-using Ckan_Front_End.Web.Models.ActionResults;
-using Ckan_Front_End.Web.Models;
+using CivicDataFrontEnd.Web.Models.ActionResults;
+using CivicDataFrontEnd.Web.Models;
 using log4net;
 using System.Reflection;
 using Microsoft.Win32;
 using System.Text.RegularExpressions;
 
-namespace Ckan_Front_End.Web.Controllers
+namespace CivicDataFrontEnd.Web.Controllers
 {
     public class DownloadProxyController : Controller
     {

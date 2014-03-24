@@ -1,4 +1,4 @@
-﻿@model List<Ckan_Front_End.Web.Models.SiteMap.SiteMapUrl>
+﻿@model List<CivicDataFrontEnd.Web.Models.SiteMap.SiteMapUrl>
 @{
     Layout = null;
 }
@@ -12,7 +12,7 @@
       {
       <lastmod>@url.LastModification.ToString("yyyy-MM-dd")</lastmod> 
       }
-      @if (url.ChangeFrequency != Ckan_Front_End.Web.Models.SiteMap.SiteMapUrlChangeFrequency.Never)
+      @if (url.ChangeFrequency != CivicDataFrontEnd.Web.Models.SiteMap.SiteMapUrlChangeFrequency.Never)
       {
       <changefreq>@url.ChangeFrequency.ToString().ToLower()</changefreq> 
       }

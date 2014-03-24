@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Ckan_Front_End.Api;
-using Ckan_Front_End.Web.Models;
-using Ckan_Front_End.Web.Models.Helpers;
+using CivicDataFrontEnd.Api;
+using CivicDataFrontEnd.Web.Models;
+using CivicDataFrontEnd.Web.Models.Helpers;
 using System.Security;
 
-namespace Ckan_Front_End.Web.Controllers
+namespace CivicDataFrontEnd.Web.Controllers
 {
     public class CacheController : Controller
     {

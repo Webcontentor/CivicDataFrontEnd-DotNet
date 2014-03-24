@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Ckan_Front_End.Web.Models.Helpers;
-using Ckan_Front_End.Web.Models;
+using CivicDataFrontEnd.Web.Models.Helpers;
+using CivicDataFrontEnd.Web.Models;
 using System.IO;
 
-namespace Ckan_Front_End.Web.Controllers
+namespace CivicDataFrontEnd.Web.Controllers
 {
     public class ThemePageController : Controller
     {

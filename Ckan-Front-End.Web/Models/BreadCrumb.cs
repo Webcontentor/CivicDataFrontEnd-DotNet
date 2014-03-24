@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Routing;
 
-namespace Ckan_Front_End.Web.Models
+namespace CivicDataFrontEnd.Web.Models
 {
     public class BreadCrumb
     {

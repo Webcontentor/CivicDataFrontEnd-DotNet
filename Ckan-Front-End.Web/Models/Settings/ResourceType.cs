@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Ckan_Front_End.Web.Models.Settings
+namespace CivicDataFrontEnd.Web.Models.Settings
 {
     public class ResourceType
     {

@@ -1,10 +1,10 @@
-﻿@using Ckan_Front_End.Api.Model
-@using Ckan_Front_End.Web.Models.Helpers
+﻿@using CivicDataFrontEnd.Api.Model
+@using CivicDataFrontEnd.Web.Models.Helpers
 @using System.Text
 @model Package
 
 @{
-    var formatTypes = Ckan_Front_End.Web.Models.Helpers.SettingsHelper.GetResourceSettings().Types;
+    var formatTypes = CivicDataFrontEnd.Web.Models.Helpers.SettingsHelper.GetResourceSettings().Types;
 }
 <div class="package">
 
@@ -58,7 +58,7 @@
 
                     <td nowrap="nowrap">
                         @{
-                        Ckan_Front_End.Web.Models.Settings.ResourceType format = null;
+                        CivicDataFrontEnd.Web.Models.Settings.ResourceType format = null;
                         if (formatTypes.ContainsKey(resource.Format))
                         {
                             format = formatTypes[resource.Format];

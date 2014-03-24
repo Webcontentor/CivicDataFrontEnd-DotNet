@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ckan_Front_End.Api.Model
+namespace CivicDataFrontEnd.Api.Model
 {
     /// <summary>
     /// Respresents the Resource-Search-Params format in the CKAN REST API.

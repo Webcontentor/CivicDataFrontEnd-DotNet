@@ -6,7 +6,7 @@ using System.Web.Routing;
 using System.Collections.Specialized;
 using System.Web.Mvc;
 
-namespace Ckan_Front_End.Web.Models
+namespace CivicDataFrontEnd.Web.Models
 {
     public static class RouteHelper
     {

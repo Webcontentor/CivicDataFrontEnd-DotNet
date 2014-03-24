@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Ckan_Front_End.Api.Model
+namespace CivicDataFrontEnd.Api.Model
 {
     public class Tag : IEquatable<Tag>, IComparable<Tag>
     {

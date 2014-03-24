@@ -7,7 +7,7 @@ using log4net.Appender;
 using log4net.Layout;
 using log4net;
 
-namespace Ckan_Front_End.Api.Tests.Helpers
+namespace CivicDataFrontEnd.Api.Tests.Helpers
 {
     public static class LogHelper
     {

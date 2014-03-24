@@ -1,10 +1,10 @@
-﻿using Ckan_Front_End.Api.Helper;
+﻿using CivicDataFrontEnd.Api.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Ckan_Front_End.Api.Model
+namespace CivicDataFrontEnd.Api.Model
 {
     public class Related
     {

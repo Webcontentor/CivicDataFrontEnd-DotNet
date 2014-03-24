@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Ckan_Front_End.Web
+namespace CivicDataFrontEnd.Web
 {
     public class FilterConfig
     {

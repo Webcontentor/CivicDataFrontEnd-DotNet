@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ckan_Front_End.Api.DataStructures
+namespace CivicDataFrontEnd.Api.DataStructures
 {
     /// <summary>
     /// A collection Trie class that can be used to locate words by prefix

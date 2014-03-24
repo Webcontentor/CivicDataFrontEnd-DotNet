@@ -6,16 +6,16 @@ using System.Net;
 using System.IO;
 using System.Collections.Specialized;
 using System.Web;
-using Ckan_Front_End.Api.Model;
+using CivicDataFrontEnd.Api.Model;
 using RestSharp;
 using log4net;
 using System.Reflection;
 using System.Runtime.Caching;
-using Ckan_Front_End.Api.Helper;
+using CivicDataFrontEnd.Api.Helper;
 using System.Security.Cryptography;
-using Ckan_Front_End.Api.Exceptions;
+using CivicDataFrontEnd.Api.Exceptions;
 
-namespace Ckan_Front_End.Api
+namespace CivicDataFrontEnd.Api
 {
     /// <summary>
     /// A client for the CKAN API v2.

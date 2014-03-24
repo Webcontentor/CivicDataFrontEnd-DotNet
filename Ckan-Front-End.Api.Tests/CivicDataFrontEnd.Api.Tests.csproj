@@ -7,8 +7,8 @@
     <ProjectGuid>{3294AAB5-BB6B-48AA-96A7-9B3B92C3B13C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ckan_Front_End.Api.Tests</RootNamespace>
-    <AssemblyName>Ckan-Front-End.Api.Tests</AssemblyName>
+    <RootNamespace>CivicDataFrontEnd.Api.Tests</RootNamespace>
+    <AssemblyName>CivicDataFrontEnd.Api.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -56,9 +56,9 @@
     <Compile Include="WhenUsingCkanSearchResourceApi.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ckan-Front-End.Api\Ckan-Front-End.Api.csproj">
+    <ProjectReference Include="..\Ckan-Front-End.Api\CivicDataFrontEnd.Api.csproj">
       <Project>{8b1ea053-5bd9-44e2-af1a-7c6d20d29aec}</Project>
-      <Name>Ckan-Front-End.Api</Name>
+      <Name>CivicDataFrontEnd.Api</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

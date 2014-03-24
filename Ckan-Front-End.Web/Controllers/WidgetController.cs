@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using Ckan_Front_End.Api.Model;
-using Ckan_Front_End.Api;
-using Ckan_Front_End.Web.Models;
+using CivicDataFrontEnd.Api.Model;
+using CivicDataFrontEnd.Api;
+using CivicDataFrontEnd.Web.Models;
 using log4net;
 using System.Reflection;
-using Ckan_Front_End.Web.Models.Helpers;
+using CivicDataFrontEnd.Web.Models.Helpers;
 
-namespace Ckan_Front_End.Web.Controllers
+namespace CivicDataFrontEnd.Web.Controllers
 {
     public class WidgetController : Controller
     {

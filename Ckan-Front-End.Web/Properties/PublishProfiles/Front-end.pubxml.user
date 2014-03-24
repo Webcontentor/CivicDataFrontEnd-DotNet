@@ -11,19 +11,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>http://192.168.0.219/</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
-    <File Include="bin/Ckan_Front_End.Api.dll">
+    <File Include="bin/CivicDataFrontEnd.Api.dll">
       <publishTime>03/08/2014 17:21:48</publishTime>
     </File>
-    <File Include="bin/Ckan_Front_End.Api.pdb">
+    <File Include="bin/CivicDataFrontEnd.Api.pdb">
       <publishTime>03/08/2014 17:21:48</publishTime>
     </File>
-    <File Include="bin/Ckan_Front_End.Api.xml">
+    <File Include="bin/CivicDataFrontEnd.Api.xml">
       <publishTime>01/13/2014 09:13:37</publishTime>
     </File>
-    <File Include="bin/Ckan_Front_End.Web.dll">
+    <File Include="bin/CivicDataFrontEnd.Web.dll">
       <publishTime>03/08/2014 17:21:49</publishTime>
     </File>
-    <File Include="bin/Ckan_Front_End.Web.pdb">
+    <File Include="bin/CivicDataFrontEnd.Web.pdb">
       <publishTime>03/08/2014 17:21:49</publishTime>
     </File>
     <File Include="bin/de/Microsoft.Data.Edm.resources.dll">

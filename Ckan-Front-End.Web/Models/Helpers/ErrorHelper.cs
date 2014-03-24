@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Ckan_Front_End.Web.Models.Helpers
+namespace CivicDataFrontEnd.Web.Models.Helpers
 {
     public static class ErrorHelper
     {

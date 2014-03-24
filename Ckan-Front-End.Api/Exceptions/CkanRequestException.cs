@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ckan_Front_End.Api.Exceptions
+namespace CivicDataFrontEnd.Api.Exceptions
 {
     public class CkanRequestException : CkanException
     {

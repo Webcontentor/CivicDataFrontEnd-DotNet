@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Routing;
 using System.Web.Mvc;
 
-namespace Ckan_Front_End.Web.Models
+namespace CivicDataFrontEnd.Web.Models
 {
     public class PartialRequest
     {

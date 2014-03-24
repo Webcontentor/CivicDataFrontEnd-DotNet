@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using RestSharp;
 
-namespace Ckan_Front_End.Api.Helper
+namespace CivicDataFrontEnd.Api.Helper
 {
     /// <summary>
     /// Represents a cached request/response

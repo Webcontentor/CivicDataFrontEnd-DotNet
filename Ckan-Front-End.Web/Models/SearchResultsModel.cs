@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Ckan_Front_End.Api.Model;
+using CivicDataFrontEnd.Api.Model;
 
-namespace Ckan_Front_End.Web.Models
+namespace CivicDataFrontEnd.Web.Models
 {
     public class PackageSearchResultsModel : SearchResultsSideBarModel
     {

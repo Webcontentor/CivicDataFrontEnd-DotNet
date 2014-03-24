@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Ckan_Front_End.Api.Model;
+using CivicDataFrontEnd.Api.Model;
 using System.Configuration;
-using Ckan_Front_End.Web.Models.Settings;
-using Ckan_Front_End.Api.Helper;
+using CivicDataFrontEnd.Web.Models.Settings;
+using CivicDataFrontEnd.Api.Helper;
 
-namespace Ckan_Front_End.Web.Models.Helpers
+namespace CivicDataFrontEnd.Web.Models.Helpers
 {
     public static class SettingsHelper
     {

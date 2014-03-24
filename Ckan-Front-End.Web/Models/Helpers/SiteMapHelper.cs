@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Ckan_Front_End.Web.Models.SiteMap;
+using CivicDataFrontEnd.Web.Models.SiteMap;
 using System.Web.Mvc;
 
-namespace Ckan_Front_End.Web.Models.Helpers
+namespace CivicDataFrontEnd.Web.Models.Helpers
 {
     public static class SiteMapHelper
     {

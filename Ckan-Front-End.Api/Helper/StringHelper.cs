@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Ckan_Front_End.Api.Helper
+namespace CivicDataFrontEnd.Api.Helper
 {
     public static class StringHelper
     {

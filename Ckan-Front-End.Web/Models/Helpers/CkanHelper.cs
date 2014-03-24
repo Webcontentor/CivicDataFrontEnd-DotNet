@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Ckan_Front_End.Api;
-using Ckan_Front_End.Web.Models.Helpers;
-using Ckan_Front_End.Api.Model;
+using CivicDataFrontEnd.Api;
+using CivicDataFrontEnd.Web.Models.Helpers;
+using CivicDataFrontEnd.Api.Model;
 using System.Web.Caching;
 
-namespace Ckan_Front_End.Web.Models
+namespace CivicDataFrontEnd.Web.Models
 {
     public static class CkanHelper
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{8B1EA053-5BD9-44E2-AF1A-7C6D20D29AEC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ckan_Front_End.Api</RootNamespace>
-    <AssemblyName>Ckan-Front-End.Api</AssemblyName>
+    <RootNamespace>CivicDataFrontEnd.Api</RootNamespace>
+    <AssemblyName>CivicDataFrontEnd.Api</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

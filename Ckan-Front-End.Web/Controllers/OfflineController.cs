@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Ckan_Front_End.Web.Controllers
+namespace CivicDataFrontEnd.Web.Controllers
 {
     public class OfflineController : Controller
     {

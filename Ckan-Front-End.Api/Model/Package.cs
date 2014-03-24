@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Ckan_Front_End.Api.Helper;
+using CivicDataFrontEnd.Api.Helper;
 using System.Text.RegularExpressions;
 using MarkdownSharp;
 
-namespace Ckan_Front_End.Api.Model
+namespace CivicDataFrontEnd.Api.Model
 {
     public class Package
     {

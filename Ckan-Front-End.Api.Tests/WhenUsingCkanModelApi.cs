@@ -7,10 +7,10 @@ using log4net.Repository.Hierarchy;
 using log4net;
 using log4net.Appender;
 using log4net.Layout;
-using Ckan_Front_End.Api.Tests.Helpers;
-using Ckan_Front_End.Api.Model;
+using CivicDataFrontEnd.Api.Tests.Helpers;
+using CivicDataFrontEnd.Api.Model;
 
-namespace Ckan_Front_End.Api.Tests
+namespace CivicDataFrontEnd.Api.Tests
 {
     public class WhenUsingCkanModelApi
     {

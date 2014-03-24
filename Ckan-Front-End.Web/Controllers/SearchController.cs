@@ -8,15 +8,15 @@ using System.Text;
 using System.Globalization;
 using System.Net;
 using System.IO;
-using Ckan_Front_End.Api;
-using Ckan_Front_End.Web.Models;
-using Ckan_Front_End.Api.Model;
+using CivicDataFrontEnd.Api;
+using CivicDataFrontEnd.Web.Models;
+using CivicDataFrontEnd.Api.Model;
 using log4net;
 using System.Reflection;
 using System.Configuration;
-using Ckan_Front_End.Web.Models.Helpers;
+using CivicDataFrontEnd.Web.Models.Helpers;
 
-namespace Ckan_Front_End.Web.Controllers
+namespace CivicDataFrontEnd.Web.Controllers
 {
     public class SearchController : Controller
     {

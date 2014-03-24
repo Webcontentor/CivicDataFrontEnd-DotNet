@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ckan_Front_End.Web</RootNamespace>
-    <AssemblyName>Ckan-Front-End.Web</AssemblyName>
+    <RootNamespace>CivicDataFrontEnd.Web</RootNamespace>
+    <AssemblyName>CivicDataFrontEnt.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -90,10 +90,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -336,9 +332,9 @@
     <None Include="Properties\PublishProfiles\testcivicdata - Production.pubxml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ckan-Front-End.Api\Ckan-Front-End.Api.csproj">
+    <ProjectReference Include="..\Ckan-Front-End.Api\CivicDataFrontEnd.Api.csproj">
       <Project>{8b1ea053-5bd9-44e2-af1a-7c6d20d29aec}</Project>
-      <Name>Ckan-Front-End.Api</Name>
+      <Name>CivicDataFrontEnd.Api</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

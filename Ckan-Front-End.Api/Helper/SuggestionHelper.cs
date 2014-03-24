@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Ckan_Front_End.Api.DataStructures;
+using CivicDataFrontEnd.Api.DataStructures;
 using System.Runtime.Caching;
-using Ckan_Front_End.Api.Model;
+using CivicDataFrontEnd.Api.Model;
 
-namespace Ckan_Front_End.Api.Helper
+namespace CivicDataFrontEnd.Api.Helper
 {
     internal static class SuggestionHelper
     {

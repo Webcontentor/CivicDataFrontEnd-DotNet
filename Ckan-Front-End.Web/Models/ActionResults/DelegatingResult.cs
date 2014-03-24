@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Ckan_Front_End.Web.Models.ActionResults
+namespace CivicDataFrontEnd.Web.Models.ActionResults
 {
     public class DelegatingResult : ActionResult
     {
