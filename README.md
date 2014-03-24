@@ -1,4 +1,4 @@
-CkanFrontEnd-DotNet
+CivicDataFrontEnd-DotNet
 ===================
 
 ###About:
