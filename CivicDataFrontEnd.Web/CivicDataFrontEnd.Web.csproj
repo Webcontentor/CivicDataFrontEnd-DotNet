@@ -174,6 +174,7 @@
     <Compile Include="Models\SiteMap\SiteMapUrl.cs" />
     <Compile Include="Models\SiteMap\SiteMapUrlChangeFrequency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewEngines\CustomThemeViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
