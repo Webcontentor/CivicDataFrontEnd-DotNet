@@ -1,7 +1,7 @@
-﻿using System.Configuration;
-using System.IO;
+﻿using System.IO;
 using System.Web;
 using System.Web.Mvc;
+using CivicDataFrontEnd.Web.Factories;
 
 namespace CivicDataFrontEnd.Web.ViewEngines
 {
@@ -11,8 +11,7 @@ namespace CivicDataFrontEnd.Web.ViewEngines
 
         public CustomThemeViewEngine()
         {
-            var theme = ConfigurationManager.AppSettings["Platform.Theme"];
-            _themeName = string.IsNullOrEmpty(theme) ? "BridgeView" : theme;
+            _themeName = ThemeFactory.GetCurrentTheme();
         }
 
         public override ViewEngineResult FindPartialView(ControllerContext controllerContext, string partialViewName, bool useCache)
