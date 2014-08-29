@@ -10,7 +10,7 @@ namespace CivicDataFrontEnd.Web.App_Start
         public static void RegisterBundles(BundleCollection bundles)
         {
             var themeName = ThemeFactory.GetCurrentTheme();
-            bundles.Add(new StyleBundle("~/styles/current-theme").Include("~/content/theme/" + themeName + "/*.css"));
+            bundles.Add(new StyleBundle("~/styles/current-theme").Include("~/content/theme/" + themeName + "/theme.css"));
         }
     }
 }

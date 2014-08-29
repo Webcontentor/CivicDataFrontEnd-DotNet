@@ -209,7 +209,6 @@
     <Content Include="Content\smoothness\images\ui-icons_888888_256x240.png" />
     <Content Include="Content\smoothness\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Content\smoothness\jquery-ui-1.8.16.custom.css" />
-    <Content Include="Content\Styles.css" />
     <Content Include="Content\Theme\BridgeView\images\about.png" />
     <Content Include="Content\Theme\BridgeView\images\body-bg.jpg" />
     <Content Include="Content\Theme\BridgeView\images\bridgeheader-bg.png" />
@@ -220,11 +219,14 @@
     <Content Include="Content\Theme\BridgeView\images\title-img.png" />
     <Content Include="Content\Theme\BridgeView\images\top-search.png" />
     <Content Include="Content\Theme\BridgeView\images\usage.png" />
-    <Content Include="Content\Theme\BridgeView\main.css">
-      <DependentUpon>main.less</DependentUpon>
+    <Content Include="Content\Theme\BridgeView\theme.css">
+      <DependentUpon>theme.less</DependentUpon>
     </Content>
-    <Content Include="Content\Theme\slc\main.css">
-      <DependentUpon>main.less</DependentUpon>
+    <Content Include="Content\Theme\BridgeView\styles.css">
+      <DependentUpon>styles.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Theme\slc\theme.css">
+      <DependentUpon>theme.less</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
     <Content Include="iframetest.html" />
@@ -315,13 +317,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Content\Theme\BridgeView\main.less" />
-    <Content Include="Content\Theme\BridgeView\main.css.map">
-      <DependentUpon>main.css</DependentUpon>
+    <Content Include="Content\Theme\BridgeView\theme.less" />
+    <Content Include="Content\Theme\BridgeView\theme.css.map">
+      <DependentUpon>theme.css</DependentUpon>
     </Content>
-    <Content Include="Content\Theme\slc\main.less" />
-    <Content Include="Content\Theme\slc\main.css.map">
-      <DependentUpon>main.css</DependentUpon>
+    <Content Include="Content\Theme\slc\theme.less" />
+    <Content Include="Content\Theme\slc\theme.css.map">
+      <DependentUpon>theme.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Theme\BridgeView\styles.less" />
+    <Content Include="Content\Theme\BridgeView\styles.css.map">
+      <DependentUpon>styles.css</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\Front-end.pubxml" />
     <None Include="Properties\PublishProfiles\testcivicdata - Production.pubxml" />
