@@ -64,13 +64,13 @@
         <div id="line"></div>
         @if (SettingsHelper.GetPackageUseThemeLicenseTemplate())
         {
-            @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_License.cshtml")
+            @Html.Partial("~/Views/Theme/_License.cshtml")
         }
         else
         {
             @Html.Partial("~/Views/Shared/Package/_License.cshtml")
         }
         <div id="line"></div>
-        @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_About.cshtml")
+        @Html.Partial("~/Views/Theme/_About.cshtml")
     </div>
 }

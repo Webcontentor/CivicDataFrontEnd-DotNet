@@ -4,7 +4,7 @@
     ViewBag.Title = SettingsHelper.GetHomePageTitle();
 }
 
-<div id="header">@RenderPage("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_HomeHeader.cshtml")
+<div id="header">@Html.Partial("~/Views/Theme/_HomeHeader.cshtml")
 </div>
 
 <div id="body">
@@ -28,10 +28,10 @@
         @Html.Action("PopularTags", "Widget")
         <div id="line"></div>
     }
-    @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_License.cshtml")
+    @Html.Partial("~/Views/Theme/_License.cshtml")
     <div id="line"></div>
 
-    @Html.Partial("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_About.cshtml")
+    @Html.Partial("~/Views/Theme/_About.cshtml")
 </div>
 }
 

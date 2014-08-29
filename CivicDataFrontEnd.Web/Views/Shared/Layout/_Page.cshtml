@@ -23,7 +23,7 @@
     <link href="@Url.Content("~/Scripts/datatables/css/jquery.dataTables.css")" rel="stylesheet" type="text/css"/>
 
     <!-- Theme resources -->
-    @RenderPage("~/Views/Theme/" + SettingsHelper.GetCatalogTheme() + "/_Head.cshtml")
+    @Html.Partial("~/Views/Theme/_Head.cshtml")
 
     <!-- Enable tipTip tooltips -->
     <script language="javascript">
@@ -38,12 +38,12 @@
 
     @if (SettingsHelper.GetUserVoiceEnabled())
     {
-        @RenderPage("~/Views/Shared/_UserVoice.cshtml")
+        @Html.Partial("~/Views/Shared/_UserVoice.cshtml")
     }
     
     @if (SettingsHelper.GetGoogleAnalyticsEnabled() && ViewData["DisableAnalytics"] == null)
     {
-        @RenderPage("~/Views/Shared/_Analytics.cshtml")
+        @Html.Partial("~/Views/Shared/_Analytics.cshtml")
     }
 </head>
 
