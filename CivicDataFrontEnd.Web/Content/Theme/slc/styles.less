@@ -1,0 +1,600 @@
+﻿/*=============================================*/
+/* Core styles (override in theme as required)
+/*=============================================*/
+
+/* HTML5 support for IE versions less than 9 */
+header,nav,article,footer,section,aside,figure,figcaption
+{
+    display:block;
+}
+
+/* Core page structure styles */
+#content
+{
+    padding: 0px;
+    overflow:hidden;
+	clear:both;
+	position: relative;
+}
+
+#ribbon
+{
+    margin-bottom: 7px;
+}
+
+#header
+{
+    margin: 40px 0px 40px 0px;
+}
+
+#body
+{
+   float: left;
+   width: 700px; /* Width of body in pixels */
+}
+
+
+#sidebar
+{
+    float: right;
+    width: 210px; /*Width of right column in pixels*/
+    padding:0px 20px;
+}
+.sidebar-title
+{
+    font-size:12px;
+    margin:20px 0px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs 
+{
+    display:inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin:40px 0px;
+    width:100%;
+}
+
+.breadcrumb-filter
+{   
+    display: inline-block;
+    margin: 0 0px 5px 0;
+    padding: 1px 14px 1px 2px;
+    background-image: url("Images/remove_small.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.breadcrumb-filter:hover
+{
+    background-image: url("Images/remove_small_hover.png");
+}
+.breadcrumb a
+{
+    color:#e24e2a;
+}
+
+/* Sharing buttons */
+.share-buttons
+{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+/* Containers*/
+.container
+{
+   padding: 0px;
+   margin-top:20px;
+   margin-bottom: 10px;
+   position: relative;
+}
+
+.container-title 
+{
+    position: relative;
+    margin: 0px 0px;
+    font-size:18px;
+}
+.container-title-link
+{
+    background:#ff5324;
+    border:none;
+    padding:10px 20px;
+    color:#fff !important;
+    text-decoration:none;
+}
+
+.container-content
+{
+    position: relative;
+    color:#798a94;
+    font-size:12px;
+}
+
+/* Format styles (format 'tags') */
+.formats-label
+{
+}
+
+.format
+{   
+    margin: 0px 0px 1px 2px;
+    padding: 0px 10px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    font-size:12px;
+}
+.format-odd
+{
+    background-color:#7fba00;
+}
+.format-event
+{
+    background-color:#01a4ef;
+}
+
+
+/* Rating styles */
+.rating
+{
+    display: inline-block;
+}
+
+.rating-response
+{
+    padding: 0px 0px 0px 4px;
+}
+
+/* Button styles */
+.button-open-data
+{
+    padding: 2px 2px;
+}
+
+/* Search box styles */
+
+.search 
+{
+    position:relative;
+}
+
+#search-line
+{
+    height:32px;
+    width:468px;
+}
+
+.search-input 
+{
+    width: 400px;
+    background-color:#fff;
+    border:none;
+    height:32px;
+    padding-left:8px;
+}
+
+.search-submit 
+{
+    cursor: pointer;
+    background-image:url(/Content/Theme/slc/images/search.png);
+    background-repeat:no-repeat;
+    width:68px;
+    height:32px;
+    border:none;
+    margin-left:-4px;
+    vertical-align:bottom;
+}
+
+/* Search results styles */
+.results
+{
+    margin: 20px 0px !important;
+    padding: 0px !important;
+}
+
+.results-none
+{
+    padding: 10px 0px 10px 0px;
+}
+
+.result 
+{
+    cursor: pointer;
+    position: relative;
+    padding: 9px 4px 9px 4px;
+}
+
+.result-title
+{
+    display: block;
+    padding: 0px 0px 2px 0px;
+}
+
+.result-title a
+{
+    color:#01a4ef;
+    text-decoration:none;
+}
+.result-title a:hover {
+	color: #01a4ef;
+    text-decoration:underline;
+}
+.result-title a:active {
+	color: #01a4ef;
+    text-decoration:underline;
+}
+.result-title a:visited {
+	color: #01a4ef;
+    text-decoration:underline;
+}
+
+.result-date
+{
+    display: block;
+    padding: 1px 0px 3px 0px;
+    color:#798a94;
+
+}
+
+.result .formats
+{ 
+    position: absolute;
+    top: 6px;
+    right:4px;
+}
+
+.result-rating
+{
+    padding: 0 0 3px;
+}
+
+.result-tags
+{
+    margin: 6px 0px 0px 0px;
+    color:#798a94;
+}
+
+.results-header
+{
+    position: relative;
+    /*padding: 5px 0px 10px 0px;*/
+    color:#798a94;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.results-limit
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-weight: normal;
+}
+
+.results-mode
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.results-mode .mode
+{
+    font-size: 12px;
+    padding: 4px;
+    margin: 0px 0px 0px 0px;
+    font-weight: normal;
+    color:#ff5324;
+}
+
+
+.results-mode .mode.active
+{
+    padding: 4px;
+    margin: 0px 0px 4px 0px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#results-table
+{
+    margin: 5px 0px 15px 0px;
+}
+
+.results-table td
+{
+    font-size: 12px;
+}
+
+.results-table .package-link
+{
+    font-size: 13px;
+}
+
+/* Pager styles */
+.pager-container
+{
+    position: relative;
+    height: 24px;
+}
+
+.pager
+{
+    position:absolute;
+    display: inline-block;
+    padding: 0px !important;
+    right: 0px;
+}
+
+.pager a
+ {
+    padding: 2px 5px;
+    cursor: pointer;
+ }
+
+.pager span a
+{
+    margin: 0px 4px 0px 0px;
+}
+
+.pager span a.active
+{
+    color: #6e7e87;
+    text-decoration: none;
+    cursor:default;
+}
+
+/* Pager in a header */
+.container-title .pager
+{
+    margin: 0px !important;
+    padding: 0px !important;
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    min-height: 24px;
+}
+
+/* Package styles */
+.package-title
+{
+    margin-top:20px;
+    font-size:24px;
+    color:#ff5324;
+}
+
+.package-subtitle
+{
+    position:relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.package-subscribe
+{
+    position:absolute;
+    bottom: 6px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    background-image: url("Images/rss.png");
+    display:block;
+}
+
+.package-action {
+    padding: 4px;
+    margin: 0px 0px 4px 0px;
+    text-decoration: underline;
+    color: #01a4ef;
+}
+
+.package-action:active, .package-action:hover, .package-action:visited  
+{
+    padding: 4px;
+    margin: 0px 0px 4px 0px;
+}
+
+.container table
+{
+    border: 0px;
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0;
+}
+.container tr
+{
+    background:#21292e;
+}
+
+.container th {
+    text-align: center;
+    padding: 5px;
+    border-right-style: solid;    
+    border-top-style: solid;
+    border-right-color: #283338;
+    border-top-color: #283338;
+    border-width: 1px;
+    color: #95c4db;
+}
+
+.container td {
+    color: #ddeaf0;
+    font-size: 12px;
+    padding: 5px 7px 5px 25px;
+    vertical-align: top;
+    border-color: #283338;
+    border-top-style: solid;    
+    border-right-style: solid;
+    border-width: 1px;
+    font-family: verdana;
+    font-size: 12px;
+    background:#232b30;
+}
+
+
+.table-title {
+    color: #b8d0e0;
+    padding: 5px 15px;
+    background: #4c585f;
+}
+
+/* Tag counts */
+.tag
+{
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 0px 5px 0;
+    margin: 1px;
+    padding: 0px 3px 2px 0px;
+    line-height: normal;
+    zoom: 1;
+    *display: inline;
+}
+
+.tagline
+{
+    font-size:12px;
+    color:#798a94;
+}
+
+/* Featured packages */
+.featured-container
+{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom:20px;
+}
+
+.featured-package
+{
+    position:relative;
+    display: inline-block;
+    vertical-align: top;   
+    width: 200px;
+    height: 150px;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    background-image:url(/Content/Theme/slc/images/bridgeheader-bg.png);
+    background-repeat:repeat;
+}
+
+.featured-package-notes
+{
+    margin: 3px 0px 0px 0px;
+    padding: 0px;
+    font-size: 12px;
+    color:#ebeced;
+}
+
+.featured-package .formats
+{ 
+    position: absolute;
+    bottom: 7px;
+    left:7px;
+}
+
+.featured-package .formats .format
+{ 
+    padding:0px;
+    color:#798a94;
+}
+
+.featured-package a
+{
+    color:#01a4ef !important;
+}
+
+/* AddThis styles */
+.share-buttons 
+{
+    width: 225px;
+    margin-top:40px;
+}
+
+/* Related items thumbnail styles */
+/* Application list (thumbnail list) styles */
+.application-list 
+{
+	height: 100%;
+    text-align: center;
+}
+
+.application
+{
+	margin-bottom: 20px;
+}
+
+.applicationCount
+{
+    padding: 0px;
+}
+
+.application-thumbnail, .application-thumbnail:link, .application-thumbnail:active, .application-thumbnail:hover, .application-thumbnail:visited {
+    	
+	display: inline-block;
+	border: 1px solid #bbb;
+	
+	background-color:#fff;
+	
+	-moz-box-shadow: 0px 0px 6px #ccc;
+	-webkit-box-shadow: 0px 0px 6px #ccc;
+	box-shadow: 0px 0px 6px #ccc;    
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+
+    overflow:hidden;
+
+    text-align: left;
+}
+
+.application-thumbnail-image
+{
+    line-height: 180px;
+    max-height: 180px;
+}
+
+.application-thumbnail-meta
+{
+	font-size: 12px;
+	overflow: hidden;
+	
+	padding: 5px 5px 5px 5px;
+	color: #333333;
+	position: absolute;
+	bottom: 0px;
+	border-top:1px solid #ccc;
+	z-index: 1;
+	background: #ffffff;
+}
+
+.application-thumbnail-name
+{
+	font-weight: bold;
+}
+
+
+.application-thumbnail-description
+{
+	font-size: 11px;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+}
+
+.application-thumbnail-description > div
+{
+	position:relative;
+}
+
+.application-thumbnail-image
+{
+    max-width: 100%;
+	background-position:center center;
+}

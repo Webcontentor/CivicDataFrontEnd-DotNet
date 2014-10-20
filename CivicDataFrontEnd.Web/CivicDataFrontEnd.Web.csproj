@@ -225,6 +225,19 @@
     <Content Include="Content\Theme\BridgeView\styles.css">
       <DependentUpon>styles.less</DependentUpon>
     </Content>
+    <Content Include="Content\Theme\slc\images\about.png" />
+    <Content Include="Content\Theme\slc\images\body-bg.jpg" />
+    <Content Include="Content\Theme\slc\images\bridgeheader-bg.png" />
+    <Content Include="Content\Theme\slc\images\line.png" />
+    <Content Include="Content\Theme\slc\images\logo.png" />
+    <Content Include="Content\Theme\slc\images\search.png" />
+    <Content Include="Content\Theme\slc\images\tag.png" />
+    <Content Include="Content\Theme\slc\images\title-img.png" />
+    <Content Include="Content\Theme\slc\images\top-search.png" />
+    <Content Include="Content\Theme\slc\images\usage.png" />
+    <Content Include="Content\Theme\slc\styles.css">
+      <DependentUpon>styles.less</DependentUpon>
+    </Content>
     <Content Include="Content\Theme\slc\theme.css">
       <DependentUpon>theme.less</DependentUpon>
     </Content>
@@ -329,8 +342,14 @@
     <Content Include="Content\Theme\BridgeView\styles.css.map">
       <DependentUpon>styles.css</DependentUpon>
     </Content>
+    <Content Include="Content\Theme\slc\styles.less" />
+    <Content Include="Content\Theme\slc\styles.css.map">
+      <DependentUpon>styles.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\Front-end.pubxml" />
     <None Include="Properties\PublishProfiles\testcivicdata - Production.pubxml" />
+    <Content Include="Views\Theme\slc\_TopMenu.cshtml" />
+    <Content Include="Views\Theme\_TopMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CivicDataFrontEnd.Api\CivicDataFrontEnd.Api.csproj">
